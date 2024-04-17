@@ -18,5 +18,4 @@ tensorflow-gpu
 tensorflow-intel
 tensorflow-io-gcs-filesystem
 tqdm
-echo "Cython<3" > cython_constraint.txt
-PIP_CONSTRAINT=cython_constraint.txt pip install "ai-core-sdk[aicore-content]"
+PIP_CONSTRAINT=Cython>3 pip install "ai-core-sdk[aicore-content]"
