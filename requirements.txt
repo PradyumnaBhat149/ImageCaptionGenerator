@@ -6,7 +6,7 @@ nltk
 numpy
 requests
 Cython<3
-ai-core-sdk[aicore-content]
+"ai-core-sdk[aicore-content]"
 wheel
 setuptools
 tensorboard
@@ -18,4 +18,3 @@ tensorflow-gpu
 tensorflow-intel
 tensorflow-io-gcs-filesystem
 tqdm
-PIP_CONSTRAINT=Cython>3 pip install "ai-core-sdk[aicore-content]"
