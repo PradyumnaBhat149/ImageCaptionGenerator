@@ -5,8 +5,6 @@ keras-preprocessing
 nltk
 numpy
 requests
-wheel
-python_version >= "3.7"
 setuptools
 tensorboard
 tensorboard-data-server
