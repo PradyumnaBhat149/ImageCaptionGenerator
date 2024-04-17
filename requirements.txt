@@ -6,7 +6,7 @@ nltk
 numpy
 requests
 Cython<3
-ai-core-sdk[aicore-content]
+ai-core-sdk[aicore-content];python_version >= "3.7"
 tensorboard
 tensorboard-data-server
 tensorboard-plugin-wit
