@@ -4,7 +4,6 @@ keras
 keras-preprocessing
 nltk
 numpy
-python
 cython
 tensorboard
 tensorboard-data-server
