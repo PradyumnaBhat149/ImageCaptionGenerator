@@ -5,8 +5,6 @@ keras-preprocessing
 nltk
 numpy
 requests
-Cython<3
-"ai-core-sdk[aicore-content]"
 wheel
 setuptools
 tensorboard
