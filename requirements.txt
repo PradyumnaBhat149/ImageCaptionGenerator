@@ -11,6 +11,7 @@ tensorboard-data-server
 tensorboard-plugin-wit
 tensorflow
 tensorflow-estimator
+tensorflow-gpu==2.10.1
 tensorflow-intel
 tensorflow-io-gcs-filesystem
 tqdm
