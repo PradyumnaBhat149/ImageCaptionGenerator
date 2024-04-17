@@ -4,6 +4,7 @@ keras
 Keras-Preprocessing
 nltk
 numpy
+cython
 tensorboard
 tensorboard-data-server
 tensorboard-plugin-wit
