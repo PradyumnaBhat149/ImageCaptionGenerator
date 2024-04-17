@@ -11,7 +11,6 @@ tensorboard-data-server
 tensorboard-plugin-wit
 tensorflow
 tensorflow-estimator
-tensorflow-gpu
 tensorflow-intel
 tensorflow-io-gcs-filesystem
 tqdm
