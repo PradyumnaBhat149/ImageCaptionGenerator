@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="{{url_for('static', filename='styles/style.css')}}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Image Caption Generator</title>
+</head>
+<body>
+    <div class="main">
+        <header>
+            <h1>Image Caption Generator</h1>
+        </header>
+        <div class="container">
+            <input type="file" id="file" accept="image/*" hidden>
+            <div class="img-area" data-img="">
+                <i class='bx bxs-cloud-upload icon'></i>
+                <h3>Upload Image</h3>
+                
+            </div>
+            <button class="select-image">Select Image</button>
+            <button class="generate-image">Generate</button>
+         </div>   
+
+        <div class="outputs">
+            <div class="output1">
+                <div class="text-area">
+                    <textarea class="txt1" rows="3" cols="40" placeholder="OUTPUT 1"></textarea>
+                </div>
+                <button class="sound" onclick="speak1()"><i class="fa fa-volume-up" style="font-size:28px"></i></button>
+            </div>
+           
+
+            <div class="langs">
+                <label for="lang">Choose your Language</label>
+
+                <select name="languages" id="lang">
+                    <option value="kn">Kannada</option>
+                    <option value="hi">Hindi</option>
+                    <option value="te">Telugu</option>
+                    <option value="ta">Tamil</option>
+                    <option value="ml">Malayalam</option>
+                </select>
+                <button class="translate">Translate</button>
+            </div>
+
+            <div class="output1">
+                <div class="text-area">
+                    <textarea class="txt2" rows="3" cols="40" placeholder="OUTPUT 2"></textarea>
+                </div>
+                <button class="clear" onclick="clean()"><i class="fa fa-times" style="font-size:28px"></i></button>
+            </div>
+            
+        </div>
+    </div>
+    <script src="{{url_for('static', filename='scripts/script.js')}}"></script>
+</body>
+</html>
