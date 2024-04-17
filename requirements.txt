@@ -4,7 +4,6 @@ keras
 Keras-Preprocessing
 nltk
 numpy
-Python==3.7
 tensorboard
 tensorboard-data-server
 tensorboard-plugin-wit
