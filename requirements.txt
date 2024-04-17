@@ -5,7 +5,8 @@ keras-preprocessing
 nltk
 numpy
 requests
-Cython==3.0.5
+Cython<3
+ai-core-sdk[aicore-content]
 tensorboard
 tensorboard-data-server
 tensorboard-plugin-wit
