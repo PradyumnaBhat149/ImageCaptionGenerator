@@ -1,5 +1,4 @@
 deep-translator
-os
 Flask
 keras
 Keras-Preprocessing
