@@ -5,7 +5,7 @@ keras-preprocessing
 nltk
 numpy
 requests
-cython
+Cython==3.0.5
 tensorboard
 tensorboard-data-server
 tensorboard-plugin-wit
