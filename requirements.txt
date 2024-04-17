@@ -1,9 +1,11 @@
 deep-translator
-Flask
+flask
 keras
-Keras-Preprocessing
+keras-preprocessing
 nltk
+base64
 numpy
+python
 cython
 tensorboard
 tensorboard-data-server

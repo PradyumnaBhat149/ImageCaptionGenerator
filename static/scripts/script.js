@@ -8,8 +8,7 @@ const imgArea = document.querySelector('.img-area');
 var s1='';
 var s2='';
 var lang='';
-let image_path = ''; 
-
+let image_base64 = ''; 
 
 
 selectImage.addEventListener('click', function () {
@@ -28,13 +27,12 @@ inputFile.addEventListener('change', function () {
             img.src = imgUrl;
             imgArea.appendChild(img);
             imgArea.classList.add('active');
-            
-            image_path = "C:\\Users\\prady\\Desktop\\FYP\\Phase 6\\Backend\\Images\\" + image.name;
+            image_base64 = imgUrl;
             imgArea.dataset.img = image.name;
         }
         reader.readAsDataURL(image);
     } else {
-        alert("Image size more than 2MB");
+        alert("Image size more than 20MB");
     }
 })
 
@@ -47,7 +45,7 @@ generateImage.addEventListener('click', async function () {
             headers: {
                 'Content-Type': 'application/json',
             },
-            body: JSON.stringify({ image_path }),
+            body: JSON.stringify({ image_base64 }),
         });
 
         if (response.ok) {

@@ -9,6 +9,8 @@ from tensorflow.keras.preprocessing.sequence import pad_sequences
 from tensorflow.keras.models import Model, load_model
 from deep_translator import GoogleTranslator
 
+import base64
+
 app = Flask(__name__)
 
 
@@ -126,7 +128,13 @@ def predict_caption(model1, image, tokenizer1, max_length1):
 @app.route('/predict', methods=['POST'])
 def predict():
     try:
-        image_path = request.json.get('image_path')
+        image_base64 = request.json.get('image_base64')
+        image_base64 = image_base64.split(",")[1]
+        image_decoded = base64.b64decode((image_base64))
+        imgFile = open('image.jpg', 'wb')
+        imgFile.write(image_decoded)
+        imgFile.close()
+        image_path = os.path.join('image.jpg')
         # load image
         image = load_img(image_path, target_size=(224, 224))
         # convert image pixels to numpy array
